@@ -15,7 +15,7 @@ ps = PorterStemmer()
 #preprocess function
 def transform_test(text):
     text = text.lower()   #1.lower case
-    text = nltk.word_tokenize(text)  #2.Tokenization
+    text = word_tokenize(text)  #2.Tokenization
     #till here it is converted into list so we can run the loop and remove the special characters
     y = []
     for i in text:
